@@ -1473,12 +1473,12 @@
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe" affects="upgrade.profiles.Unit">
+            <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="3ab2-181b-28a4-6978" childId="5267-88a7-c874-ba99" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="661f-4fd-3300-5e9b" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="5267-88a7-c874-ba99" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="661f-4fd-3300-5e9b" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>

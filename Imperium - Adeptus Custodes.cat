@@ -717,7 +717,7 @@
             <selectionEntry id="c5ee-8179-ecc0-cafb" name="Custodian Guard (Sentinel Blade &amp; Praesidium Shield)" hidden="false" collective="false" import="true" type="model">
               <profiles>
                 <profile id="f36e-c3a3-477c-21d4" name="Custodian Guard (Shield)" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
-                  <modifiers>
+                  <!-- <modifiers>
                     <modifier type="increment" field="bef7-942a-1a23-59f8" value="1">
                       <conditionGroups>
                         <conditionGroup type="or">
@@ -735,7 +735,7 @@
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                  </characteristics>
+                  </characteristics> -->
                 </profile>
               </profiles>
               <infoLinks>
@@ -785,7 +785,7 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4772-db15-862a-7419" type="max"/>
               </constraints>
-              <profiles>
+              <!-- <profiles>
                 <profile id="25f8-74d6-cba6-9806" name="Custodian Guard (Vexilla)" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
@@ -796,7 +796,7 @@
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
                   </characteristics>
                 </profile>
-              </profiles>
+              </profiles> -->
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
@@ -5642,6 +5642,9 @@ Melee weapons equipped by models in this unit have the [LETHAL HITS] ability.</d
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Objective Control characteristic of models in the bearer&apos;s unit.</characteristic>
       </characteristics>
+      <modifiers>
+        <modifier type="increment" value="1" field="bef7-942a-1a23-59f8" scope="model-or-unit" affects="self.entries.profiles.Unit"/>
+      </modifiers>
     </profile>
     <profile name="Strategic Mastery" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5a38-d608-89c4-6377">
       <characteristics>
